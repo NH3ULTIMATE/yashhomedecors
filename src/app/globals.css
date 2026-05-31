@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+.heading {
+  @apply font-extrabold text-9xl;
+}
+
+.subheading {
+  @apply text-4xl font-bold;
+}
+
+.description {
+  @apply text-2xl;
+}
+
+@theme {
+  --color-background: #ededed;
+  --color-yash: #bf1b2b;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-pc: 1440px;
+}
+.clipPath {
+  clip-path: polygon(0 0, 61% 0, 30% 100%, 0% 100%);
+}
+
+html {
+  scroll-behaviour: smooth;
+}
+
+body {
+  font-family: var(--font-space-grotesk);
+}
+
+::selection {
+  background: #bf1b2b;
+  color: grey;
+}
+
+.nav-hidden {
+  transform: translateY(-100%);
+}
